@@ -153,7 +153,7 @@ ul.nosyely_list {
   display: inline-block;
   padding: 25px;
   min-width: 120px;
-  background-color: #F44336;
+  background-color: #ED3833;
   color: #ffffff;
   font-size: 48px;
   font-weight: 600;
@@ -3452,7 +3452,7 @@ textarea.form-control {
 
 /*counter section*/
 #countdown {
-  background-image: url('../img/bg/bg-img.png');
+  background-image: url('../img/bg/slider2.jpg');
 }
 
 /**/
