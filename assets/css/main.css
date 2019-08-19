@@ -2123,6 +2123,10 @@ Cover
   text-align: left;
 }
 
+.slider-content-right {
+  text-align: right;
+}
+
 .cover_slider .cover_item {
   width: 100%;
   position: relative;
