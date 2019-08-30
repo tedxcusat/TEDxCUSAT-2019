@@ -60,9 +60,8 @@
                     <li class="nav-item">
                         <a class="nav-link active smooth-goto" href="#home">Home</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link " href="#speakers" class="smooth-goto">Speakers</a>
-                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link smooth-goto" href="#speakers" class="smooth-goto">Speakers</a>                    </li> 
                     <li class="nav-item">
                         <a class="nav-link smooth-goto" href="#about">About</a>
                     </li>
@@ -297,6 +296,41 @@
 
 
     <!--speaker section-->
+    <section class="pb100">
+        <div class="container" id="speakers">
+            <div class="section_title mb50">
+                <h3 class="title">
+                   our speakers
+                </h3>
+            </div>
+        </div>
+        <div class="overlay" id="overlay" style="display:none;"></div>
+        <div class="row justify-content-center no-gutters">
+            <div class="col-md-3 col-sm-6">
+                <div class="speaker_box" id="speakerbox1">
+                    <div class="speaker_img">
+                        <img src="assets/img/speakers/mrr.jpg" alt="speaker name">
+                        <div class="info_box" >
+                            <h5 class="name">Patricia Stone</h5>
+                            <p class="position">CEO Company</p>
+                        </div>
+                        
+    
+                        <div class="box" id="box1">
+                        <a class="boxclose" id="boxclose"></a>
+                        <h1>Dr M R Rajagopal</h1>
+                        <p>
+                        An Indian palliative care physician and founder chairman of Pallium India, a palliative care non-governmental organisation based in Kerala, he was honoured with the Padma Shri in 2018 by the Indian Government for his work for the welfare of the common masses. His tireless efforts to defend the right of patients to live and die with dignity was recognised and honoured by Human Rights Watch with Alison Des Forges Award for extraordinary activism. 
+    
+                        </p>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!--  <section class="pb100">
         <div class="container">
             <div class="section_title mb50">
@@ -673,6 +707,22 @@
     <!-- scroll spy -->
 
     <!--  -->
+    <!--speakers-->
+    <script>
+        $(function() {
+        $('#speakerbox1').click(function(){
+            $('#overlay').fadeIn('fast',function(){
+                $('#box1').animate({'top':'160px'},500);
+            });
+        });
+        $('#overlay').click(function(){
+            $('#box1').animate({'top':'-200vh'},500,function(){
+                $('#overlay').fadeOut('fast');
+            });
+        });
+        });
+    </script> 
+
 </body>
 
 </html>
