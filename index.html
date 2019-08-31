@@ -61,7 +61,7 @@
                         <a class="nav-link active smooth-goto" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link smooth-goto" href="#speakers" class="smooth-goto">Speakers</a>                    </li> 
+                        <a class="nav-link smooth-goto" href="#speakers" class="smooth-goto">Speakers</a> </li>
                     <li class="nav-item">
                         <a class="nav-link smooth-goto" href="#about">About</a>
                     </li>
@@ -296,11 +296,11 @@
 
 
     <!--speaker section-->
-    <section class="pb100">
+    <section class="pb90">
         <div class="container" id="speakers">
             <div class="section_title mb50">
                 <h3 class="title">
-                   our speakers
+                    our speakers
                 </h3>
             </div>
         </div>
@@ -310,27 +310,62 @@
                 <div class="speaker_box" id="speakerbox1">
                     <div class="speaker_img">
                         <img src="assets/img/speakers/mrr.jpg" alt="speaker name">
-                        <div class="info_box" >
+                        <div class="info_box">
                             <h5 class="name">Dr M R Rajagopal</h5>
                             <p class="position">Chairman of Pallium India</p>
                         </div>
-                        
-    
+
+
                         <div class="box" id="box1">
-                        <a class="boxclose" id="boxclose"></a>
-                        <h1>Dr M R Rajagopal</h1>
-                        <p>
-                        An Indian palliative care physician and founder chairman of Pallium India, a palliative care non-governmental organisation based in Kerala, he was honoured with the Padma Shri in 2018 by the Indian Government for his work for the welfare of the common masses. His tireless efforts to defend the right of patients to live and die with dignity was recognised and honoured by Human Rights Watch with Alison Des Forges Award for extraordinary activism. 
-    
-                        </p>
+                            <a class="boxclose" id="boxclose"></a>
+                            <h1>Dr M R Rajagopal</h1>
+                            <p>
+                                An Indian palliative care physician and founder chairman of Pallium India, a palliative
+                                care non-governmental organisation based in Kerala, he was honoured with the Padma Shri
+                                in 2018 by the Indian Government for his work for the welfare of the common masses. His
+                                tireless efforts to defend the right of patients to live and die with dignity was
+                                recognised and honoured by Human Rights Watch with Alison Des Forges Award for
+                                extraordinary activism.
+
+                            </p>
                         </div>
-                
+
+                    </div>
+                </div>
+            </div>
+            <div style=" width: 10vw;"></div>
+            <div class="col-md-3 col-sm-6">
+                <div class="speaker_box" id="speakerbox2">
+                    <div class="speaker_img">
+                        <img src="assets/img/speakers/tiffany.jpg" alt="speaker name">
+                        <div class="info_box">
+                            <h5 class="name">Tiffany Brar</h5>
+                            <p class="position">Founder of Jyothirgamaya Foundation</p>
+                        </div>
+
+
+                        <div class="box" id="box1">
+                            <a class="boxclose" id="boxclose"></a>
+                            <h1>Tiffany Brar</h1>
+                            <p>
+                                A blind Indian community service worker and founder of the Jyothirgamaya Foundation, a
+                                non-profit organization. She has made it her duty to untiringly work for the blind
+                                community to make a difference in their lives. As a social activist and trainer, she has
+                                endeavoured to create awareness of all kinds of disability and has worked extremely hard
+                                to remove the taboos around disabilities and for acceptance of everyone as one of our
+                                own. She is a pillar of strength for not just the blind, but for every citizen of India.
+
+                            </p>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <h4 class="text-center pb40">More to follow.</h4>
+
     <!--  <section class="pb100">
         <div class="container">
             <div class="section_title mb50">
@@ -708,20 +743,6 @@
 
     <!--  -->
     <!--speakers-->
-    <script>
-        $(function() {
-        $('#speakerbox1').click(function(){
-            $('#overlay').fadeIn('fast',function(){
-                $('#box1').animate({'top':'160px'},500);
-            });
-        });
-        $('#overlay').click(function(){
-            $('#box1').animate({'top':'-200vh'},500,function(){
-                $('#overlay').fadeOut('fast');
-            });
-        });
-        });
-    </script> 
 
 </body>
 

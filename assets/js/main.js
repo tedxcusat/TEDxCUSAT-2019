@@ -129,7 +129,23 @@ $(document).ready(function() {
 
 
         /* --------------------------------------------------------
-    MAPS
+    Speakers
     ----------------------------------------------------------- */
-    
+    $(function () {
+        $('.speaker_box').click(function () {
+            var box =  '#' + this.id + ' .box';
+            $('#overlay').fadeIn('fast', function () {
+                console.log(box);
+                // console.log(this.id + ' box');
+                $(box).animate({ 'top': '160px' }, 500);
+            });
+        });
+        $('#overlay').click(function () {
+            $('.box').animate({ 'top': '-200vh' }, 500, function () {
+                $('#overlay').fadeOut('fast');
+            });
+        });
+    });
+
+
 });
