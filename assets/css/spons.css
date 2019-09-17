@@ -275,8 +275,10 @@ footer section#top {
 }
 
 footer section#top button.move {
-	background-color: #fff;
+	/* background-color: #fff; */
 	padding: 10px 25px;
+	border: 2px solid;
+	border-color: #fff;	
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
@@ -285,12 +287,12 @@ footer section#top button.move {
 }
 
 footer section#top button.move a {
-	color: #000;
+	color: #fff;
 	/* font-family: american_captainregular; */
 	font-weight: bolder;
 	text-align: center;
 	font-size: large;
-	/* letter-spacing: 3px; */
+	letter-spacing: 2px;
 }
 
 footer section#bottom {
