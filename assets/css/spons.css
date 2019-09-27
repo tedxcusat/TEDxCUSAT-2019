@@ -218,6 +218,7 @@ header h1 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+	height:300px;
 }
 #main ul li {
 	background: #F5F5F5;
