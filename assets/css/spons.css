@@ -208,44 +208,49 @@ header h1 {
 #main ul li:last-child{
 	margin-right: 0;
 }
-#main ul li .top{
+.card {
+    background: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 70px 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#main ul li /*.top*/{
 	background: #F5F5F5;
 }
-#main ul li .top .right{
+#main ul li /*.top*/ .right{
 	width: 50%;
 }
-#main ul li .top .right img{
+#main ul li /*.top*/ .right img{
 	display: inline-block;
 	width: 100%;
-	float: left;
+	float: right;
 	border: solid;
 }
-#main ul li .top .left{
-	float: right;
+#main ul li /*.top*/ .left{
+	float: left;
 	width: 50%;
 }
-#main ul li .top .left h4{
+#main ul li /*.top*/ .left h4{
 	font-weight: bold;
 	font-size: 25px;
-	margin-top: 10%;
-	margin-left: 4%;
 	line-height: 44px;
 	letter-spacing: 0px;
+	float: left;
 }
-#main ul li .top .left h4.spcl{
+#main ul li /*.top*/ h4.spcl{
 	margin: 0px 8px;
 }
-#main ul li .bottom{
 
-}
-#main ul li .bottom p{
-	text-align: justify;
-}
 footer {}
 
 footer section#top {
 	text-align: right;
-	padding: 95px;
+	padding: 45px;
 	background-color: #110808;
 }
 
