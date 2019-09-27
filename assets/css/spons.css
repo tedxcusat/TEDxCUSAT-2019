@@ -80,7 +80,6 @@ a:hover,
 p {
 	line-height: 1.6em;
 	font-size: 16px;
-	font-family: 'nunitolight';
 }
 
 .hidden {
@@ -194,78 +193,54 @@ header h1 {
 	/* font-family: american_captainregular; */
 	letter-spacing: 3px;
 }
-
-#main {}
-
-#main section.content-item {
-	padding: 6.5% 0;
-	background-color: #0E0E0E;
+#main{
+	padding: 4.5% 0;
 }
 
-#main section.content-item img {
-	
-}
-
-#main section.content-item div {
-	float: none;
-}
-
-#main section.content-item div.right {
-	float: right;
-	padding-right: 10%;
-	margin-top: 45.50px;
-}
-
-#main section.content-item div h3 {
-	color: #D32F2F;
-	margin-bottom: 1%;
-	font-size: 50px;
-}
-
-#main section.content-item div.right h3 {
-	font-weight: bold;
-	/* font-family: american_captainregular; */
-	font-family: 'Merriweather Sans', sans-serif;
-	letter-spacing: 1px;
-}
-
-#main section.content-item div p {
-	font-family: sans-serif;
-}
-
-#main section.content-item div.right p {
-	color: #fff;
-}
-
-#main section.content-item.middle {
-	background-color: #fff;
-}
-
-#main section.content-item.middle div h3 {
-	color: #D32F2F;
-}
-
-#main section.content-item.middle img {
-	margin-right: 0;
-	border: 2px solid;
-}
-
-#main section.content-item.middle div.left {
+#main ul{
 	float: left;
-	margin-top: 32.5px;
 }
-
-#main section.content-item.middle div.left h3 {
+#main ul li{
+	width: 32%;
+	float: left;
+	margin-right: 2%;
+}
+#main ul li:last-child{
+	margin-right: 0;
+}
+#main ul li .top{
+	background: #F5F5F5;
+}
+#main ul li .top .right{
+	width: 50%;
+}
+#main ul li .top .right img{
+	display: inline-block;
+	width: 100%;
+	float: left;
+	border: solid;
+}
+#main ul li .top .left{
+	float: right;
+	width: 50%;
+}
+#main ul li .top .left h4{
 	font-weight: bold;
-	/* font-family: american_captainregular; */
-	font-family: 'Merriweather Sans', sans-serif;
-	letter-spacing: 1px;
+	font-size: 25px;
+	margin-top: 10%;
+	margin-left: 4%;
+	line-height: 44px;
+	letter-spacing: 0px;
 }
-
-#main section.content-item.middle div.left p {
-	color: #000;
+#main ul li .top .left h4.spcl{
+	margin: 0px 8px;
 }
+#main ul li .bottom{
 
+}
+#main ul li .bottom p{
+	text-align: justify;
+}
 footer {}
 
 footer section#top {
@@ -302,67 +277,78 @@ footer section#bottom {
 	background: #000;
 }
 
-@media (max-width: 1200px) {
-	#main .content-item h3 {
-		font-size: 45px;
-	}
+@media all and (max-width:1440px){
+		#main li h4{
+        	font-size: 20px;
+        	letter-spacing: 2px;
+        }
 }
 
-@media (max-width: 850px) {
-	#main .content-item h3 {
-		font-size: 41px;
-	}
+@media all and (max-width: 980px){
+	 #main li{
+        width:49% !important;
+        margin-right:2% !important;
+        margin-bottom:2% !important;
+    }
+    #main li p b {
+        font-weight: bold !important;
+    }
+    #main li:nth-child(2n){
+        margin-right:0 !important;
+    }
+    #main li:nth-child(3n){
+        margin-right:2%;
+    }
 }
-
-@media (max-width: 768px) {
-	#main .content-item h3 {}
-
-	#main .content-item {
-		float: none;
-		width: 100%;
-	}
-
-	#main .content-item div.right {
-		float: none;
-		width: 100%;
-	}
-
-	#main section.content-item div.right p {}
-
-	#main .content-item img {
-		width: 60%;
-		margin: 0 5% 5% 0;
-	}
-
-	#main .content-item.middle img {
-		margin: 0 0 5% 5%;
-	}
-
-	#main section.content-item.middle div.left h3 {
-		margin-top: 6%;
-	}
-
-	header {
-		padding: 20px;
-		padding-top: 40px;
-	}
+@media all and (max-width: 900px){
+    #main li{
+        width:80%;
+        margin-bottom:5%;
+    }
+    #main li h4{
+        font-size:27px;
+    }
+    #main li h4 span{
+        margin-top:15px;
+        line-height:1.1em;
+    }
 }
-
-@media (max-width: 640px) {
-
-	#main .content-item,
-	#main .content-item.middle {
-		padding: 60px 0;
-	}
-
-	#main .content-item h3 {
-		font-size: 29px;
-	}
+@media all and (max-width: 680px){
+    #main h4{
+        line-height:1.1em;
+        font-size:19px;
+    }
 }
+@media (max-width: 640px){
 
-@media (max-width: 500px) {
-	#main .content-item img {
-		width: 90%;
+}
+@media (max-width:580px){
+	#main li h4{
+		font-size: 15px;
 	}
 
+}
+@media (max-width: 480px){
+#main {
+    padding-bottom: 30px;
+    float: none;
+}
+#main {
+    padding: 28px 0;
+}
+#main ul {
+        margin-bottom: -10% !important;
+}
+#main li {
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 10% !important;
+    }
+ #main li{
+        width:100%;
+        margin-bottom:20px;
+    }
+    #main li h4{
+        font-size:20px; 
+    }
 }
