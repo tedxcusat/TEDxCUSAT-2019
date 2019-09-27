@@ -219,38 +219,36 @@ header h1 {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-#main ul li /*.top*/{
+#main ul li {
 	background: #F5F5F5;
 }
-#main ul li /*.top*/ .right{
+#main ul li .right{
 	width: 50%;
 }
-#main ul li /*.top*/ .right img{
+#main ul li .right img{
 	display: inline-block;
 	width: 100%;
 	float: right;
 	border: solid;
 }
-#main ul li /*.top*/ .left{
+#main ul li .left{
 	float: left;
 	width: 50%;
 }
-#main ul li /*.top*/ .left h4{
+#main ul li .left h4{
 	font-weight: bold;
 	font-size: 25px;
 	line-height: 44px;
 	letter-spacing: 0px;
 	float: left;
 }
-#main ul li /*.top*/ h4.spcl{
-	margin: 0px 8px;
-}
+
 
 footer {}
 
 footer section#top {
 	text-align: right;
-	padding: 45px;
+	padding: 95px;
 	background-color: #110808;
 }
 
